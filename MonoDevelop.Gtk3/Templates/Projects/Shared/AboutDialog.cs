@@ -21,12 +21,15 @@ namespace ${Namespace}
 			this.builder.Autoconnect (this);
 			if (parent != null)
 				this.TransientFor = parent;
-
+			/*
 			ProgramName = "ProgramName";
 			Version = "1.0.0.0";
-			Copyright = "(c) Copyright Copyright Copyright";
-			Comments = "Comments Comments Comments Comments Comments Comments Comments Comments";
-			Website = "http://www.zetcode.com";
+			Copyright = "Copyright © 2015";
+			Comments = "Este es el comentaria para del programa";
+			Website = "https://github.com/orion75/MonoDevelop.Gtk3";
+			WebsiteLabel = "Visitar la Página de MonoDevelop.Gtk3 addin";
+			Authors = new string[] { "Harold alfonso Reina Herrera" };
+			*/
 		}
 	}
 }

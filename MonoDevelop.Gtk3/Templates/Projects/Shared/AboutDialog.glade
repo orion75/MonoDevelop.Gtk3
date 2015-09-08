@@ -5,8 +5,17 @@
   <object class="GtkAboutDialog" id="aboutdialog1">
     <property name="can_focus">False</property>
     <property name="type_hint">dialog</property>
-    <property name="program_name">Glade</property>
+    <property name="program_name">Application</property>
+    <property name="version">1.0.0.0</property>
+    <property name="copyright" translatable="yes">Copyright © 2015 Gtk# 3.0 </property>
+    <property name="comments" translatable="yes">Comentarios</property>
+    <property name="website">https://github.com/orion75/MonoDevelop.Gtk3</property>
+    <property name="website_label" translatable="yes">Visitar la Página de MonoDevelop.Gtk3 addin</property>
+    <property name="authors">Harol Alfonso Reina Herrea</property>
+    <property name="documenters">Harol Alfonso Reina Herrea</property>
+    <property name="artists">Harol Alfonso Reina Herrea</property>
     <property name="logo_icon_name">dialog-information</property>
+    <property name="license_type">mit-x11</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="aboutdialog-vbox1">
         <property name="can_focus">False</property>
