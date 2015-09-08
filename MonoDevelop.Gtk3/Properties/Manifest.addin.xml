@@ -17,8 +17,8 @@
 	</Extension>-->
 
 	<Extension path="/MonoDevelop/Ide/ProjectTemplates">
-		<ProjectTemplate id="gtk3.application.cs" file="Templates/Projects/Gtk3.Application.xpt.xml" />
-		<ProjectTemplate id="gtk3.library.cs" file="Templates/Projects/Gtk3.Library.xpt.xml" />
+		<ProjectTemplate file="Templates/Projects/Gtk3.Application.xpt.xml" />
+<!--		<ProjectTemplate file="Templates/Projects/Gtk3.Library.xpt.xml" />-->
 	</Extension>
 
 	<Runtime>

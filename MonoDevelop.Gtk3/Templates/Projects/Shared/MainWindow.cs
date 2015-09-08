@@ -7,21 +7,31 @@ namespace ${Namespace}
 	public partial class MainWindow: Gtk.Window
 	{
 		Builder builder;
+
+		[UI] Gtk.MenuBar menubar1;
+		//[UI] Gtk.ImageMenuItem about_menu_item;
+
 		//[UI] Gtk.Button button1;
 		//[UI] Gtk.Label label1;
 
-		public static MainWindow Create()
+		public static MainWindow InitializeGui()
 		{
-			Builder builder = new Builder (null, "${Namespace}.interfaces.MainWindow.glade", null);
-			return new MainWindow (builder, builder.GetObject ("window1").Handle);
+			Builder bl = new Builder (null, "${Namespace}.MainWindow.glade", null);
+			return new MainWindow (bl, bl.GetObject ("window1").Handle);
 		}
 
 		protected MainWindow (Builder builder, IntPtr handle): base (handle)
 		{
 			this.builder = builder;
-			builder.Autoconnect (this);
-			DeleteEvent += OnDeleteEvent;
-			button1.Clicked += onButtonClick;
+			this.builder.Autoconnect (this);
+			this.Resize (600, 400);
+
+		}
+
+		protected void OnAboutMenuItemActivate (object sender, EventArgs a) {
+			var about = GtkBorrar.AboutDialog.InitializeGui (this);
+			about.Run ();
+			about.Destroy ();
 		}
 
 		protected void OnDeleteEvent (object sender, DeleteEventArgs a)

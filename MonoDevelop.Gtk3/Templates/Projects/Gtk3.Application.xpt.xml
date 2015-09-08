@@ -16,11 +16,9 @@
 		<SupportedParameters></SupportedParameters>
 	</TemplateConfiguration>
 
-
 	<Actions>
-		<Open filename="MainForm.cs"/>
+		<Open filename="MainWindow.glade.cs"/>
 	</Actions>
-
 
 	<Combine name="${ProjectName}" directory=".">
 		<Options>
@@ -42,8 +40,16 @@
 			</Packages>
 			<Files>
 				<File name="Program.cs" AddStandardHeader="True" src="Shared/Program.cs" />
-				<File name="MainWindow.cs" AddStandardHeader="True" src="Shared/MainWindow.cs" />
-				<File name="Gui/MainWindow.glade" AddStandardHeader="True" src="Shared/MainWindow.glade" BuildAction="EmbeddedResource" />
+
+				<File name="MainWindow.glade" src="Shared/MainWindow.glade" BuildAction="EmbeddedResource" ResourceId="MainWindow.glade" />
+				<File name="MainWindow.glade.cs" src="Shared/MainWindow.cs" AddStandardHeader="True" DependsOn="MainWindow.glade"/>
+
+				<File name="Dialogs/AboutDialog.glade" src="Shared/AboutDialog.glade" BuildAction="EmbeddedResource" />
+				<File name="Dialogs/AboutDialog.glade.cs" src="Shared/AboutDialog.cs" AddStandardHeader="True" DependsOn="AboutDialog.glade"/>
+
+
+<!--				<File name="MainWindow.cs" AddStandardHeader="True" src="Shared/MainWindow.cs" />
+				<File name="MainWindow.glade" src="Shared/MainWindow.glade" DependsOn="MainWindow.cs" BuildAction="EmbeddedResource" ResourceId="MainWindow.glade" />-->
 				<FileTemplateReference TemplateID="CSharpAssemblyInfo" name="Properties/AssemblyInfo.cs" />
 			</Files>
 		</Project>

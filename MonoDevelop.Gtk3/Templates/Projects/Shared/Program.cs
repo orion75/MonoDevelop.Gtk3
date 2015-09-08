@@ -9,7 +9,7 @@ namespace ${Namespace}
 		public static void Main (string[] args)
 		{
 			Application.Init ();
-			MainWindow win = MainWindow.Create();
+			MainWindow win = MainWindow.InitializeGui();
 			win.Show ();
 			Application.Run ();
 		}
