@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0"?>
 <Template>
 	<TemplateConfiguration>
-		<_Name>Gtk# 3.0 Application (Glade)</_Name>
-		<_Category>C#/Gtk3</_Category>
+		<_Name>Gtk# 3.14 Application (Glade)</_Name>
+		<_Category>other/net/general</_Category>
 		<Icon>md-project-gui</Icon>
 		<Image id="md-gtk2-project" />
 		<LanguageName>C#</LanguageName>
 		<_Description>
 		<![CDATA[
-		Creates a new GTK#3 project, where you edit the UI files externally with Glade.
+		Creates a new GTK# 3.14 project, where you edit the UI files externally with Glade.
 		]]>
 		</_Description>
 		<DefaultFilename>Gtk3Project</DefaultFilename>
-		<GroupId>gtk-project-application</GroupId>
+<!--		<GroupId>gtk-project-application</GroupId>-->
 		<SupportedParameters></SupportedParameters>
 	</TemplateConfiguration>
 
@@ -28,20 +28,14 @@
 		<Project name="${ProjectName}" directory="." namespace="${ProjectName}">
 			<Options Target="WinExe"/>
 			<References>
-					<Reference type="Package" refto="System" />
-					<Reference type="Package" SpecificVersion="true" refto="gtk-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-					<Reference type="Package" SpecificVersion="true" refto="gdk-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-					<Reference type="Package" SpecificVersion="true" refto="gio-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-					<Reference type="Package" SpecificVersion="true" refto="glib-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-					<Reference type="Package" SpecificVersion="true" refto="pango-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-					<Reference type="Package" SpecificVersion="true" refto="atk-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
 			</References>
 			<Packages>
+				<package id="gtk-sharp.Linux.3.14" version="3.14.3" targetFramework="net45" />
 			</Packages>
 			<Files>
 				<File name="Program.cs" AddStandardHeader="True" src="Shared/Program.cs" />
 
-				<File name="MainWindow.glade" src="Shared/MainWindow.glade" BuildAction="EmbeddedResource" ResourceId="MainWindow.glade" />
+				<File name="MainWindow.glade" src="Shared/MainWindow.glade" BuildAction="EmbeddedResource" />
 				<File name="MainWindow.glade.cs" src="Shared/MainWindow.cs" AddStandardHeader="True" DependsOn="MainWindow.glade"/>
 
 				<File name="Dialogs/AboutDialog.glade" src="Shared/AboutDialog.glade" BuildAction="EmbeddedResource" />

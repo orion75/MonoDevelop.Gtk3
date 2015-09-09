@@ -38,32 +38,71 @@
   <Import Project="..\packages\MonoDevelop.Addins.0.2.3\build\net40\MonoDevelop.Addins.targets" Condition="Exists('..\packages\MonoDevelop.Addins.0.2.3\build\net40\MonoDevelop.Addins.targets')" />
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Templates\Projects\Shared\MainWindow.glade">
+    <None Include="Templates\3.0\Projects\Shared\AboutDialog.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Templates\Projects\Shared\Program.cs">
+    <None Include="Templates\3.0\Projects\Shared\AboutDialog.glade">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Templates\Projects\Shared\MainWindow.cs">
+    <None Include="Templates\3.0\Projects\Shared\MainWindow.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Templates\Projects\Shared\AboutDialog.glade">
+    <None Include="Templates\3.0\Projects\Shared\MainWindow.glade">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Templates\Projects\Shared\AboutDialog.cs">
+    <None Include="Templates\3.0\Projects\Shared\Program.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.0\Files\ModalDialog.xft.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.0\Files\Shared\ModalDialog.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.0\Files\Shared\ModalDialog.glade">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.0\Files\Shared\Windows.glade">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.0\Files\Shared\Windows.glade.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.0\Files\Windows.xft.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.14\Projects\Gtk3.Application.xpt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.14\Projects\Shared\AboutDialog.glade">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.14\Projects\Shared\MainWindow.glade">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.14\Projects\Shared\AboutDialog.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.14\Projects\Shared\MainWindow.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\3.14\Projects\Shared\Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
-    <Folder Include="Templates\Projects\" />
-    <Folder Include="Templates\Projects\Shared\" />
+    <Folder Include="Templates\3.0\" />
+    <Folder Include="Templates\3.14\" />
+    <Folder Include="Templates\3.0\Files\" />
+    <Folder Include="Templates\3.0\Projects\" />
+    <Folder Include="Templates\3.0\Projects\Shared\" />
+    <Folder Include="Templates\3.0\Files\Shared\" />
+    <Folder Include="Templates\3.14\Projects\" />
+    <Folder Include="Templates\3.14\Projects\Shared\" />
   </ItemGroup>
   <ItemGroup>
-    <AddinFile Include="Templates\Projects\Gtk3.Application.xpt.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AddinFile>
-    <AddinFile Include="Templates\Projects\Gtk3.Library.xpt.xml">
+    <AddinFile Include="Templates\3.0\Projects\Gtk3.Application.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AddinFile>
   </ItemGroup>

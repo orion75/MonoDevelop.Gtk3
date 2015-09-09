@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Template>
+	<TemplateConfiguration>
+		<_Name>Gtk3 Modal Dialog (Glade)</_Name>
+		<_Category>Gtk3</_Category>
+		<LanguageName>C#</LanguageName>
+		<_Description>Creates a new modal Gtk# 3.0 Dialog class using Glade.</_Description>
+		<DefaultFilename>Gtk3Dialog</DefaultFilename>
+	</TemplateConfiguration>
+	<TemplateFiles>
+		<File name="${Name}.glade" src="Shared/ModalDialog.glade" BuildAction="EmbeddedResource"/>
+		<File name="${Name}.glade.cs" src="Shared/ModalDialog.cs" AddStandardHeader="true" DependsOn="${Name}.glade"/>
+	</TemplateFiles>
+</Template>

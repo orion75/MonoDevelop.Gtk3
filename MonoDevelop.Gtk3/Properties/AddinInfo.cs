@@ -13,4 +13,5 @@ using Mono.Addins.Description;
 [assembly:AddinDescription ("Provides support for design of GTK# 3.0 windows, dialogs and widgets")]
 [assembly:AddinAuthor ("Harol Alfonso Reina Herrera")]
 
-
+[assembly:AddinDependency ("::MonoDevelop.Core", MonoDevelop.BuildInfo.Version)]
+[assembly:AddinDependency ("::MonoDevelop.Ide", MonoDevelop.BuildInfo.Version)]

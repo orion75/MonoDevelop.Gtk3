@@ -4,7 +4,7 @@ using UI = Gtk.Builder.ObjectAttribute;
 
 namespace ${Namespace}
 {
-	public class AboutDialog: Gtk.AboutDialog
+	public class AboutDialog : Gtk.AboutDialog
 	{
 
 		Builder builder;

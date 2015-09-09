@@ -4,7 +4,7 @@ using UI = Gtk.Builder.ObjectAttribute;
 
 namespace ${Namespace}
 {
-	public partial class MainWindow: Gtk.Window
+	public partial class MainWindow : Gtk.Window
 	{
 		Builder builder;
 
@@ -28,8 +28,31 @@ namespace ${Namespace}
 
 		}
 
-		protected void OnAboutMenuItemActivate (object sender, EventArgs a) {
-			var about = GtkBorrar.AboutDialog.InitializeGui (this);
+		protected void on_NewMenuItem_activate (object sender, EventArgs a)
+		{
+		}
+
+		protected void on_OpenMenuItem_activate (object sender, EventArgs a)
+		{
+		}
+
+		protected void on_SaveMenuItem_activate (object sender, EventArgs a)
+		{
+		}
+
+		protected void on_SaveAsMenuItem_activate (object sender, EventArgs a)
+		{
+		}
+
+		protected void on_QuitMenuItem_activate (object sender, EventArgs a)
+		{
+			Application.Quit ();
+		}
+
+
+		protected void on_AboutMenuItem_activate (object sender, EventArgs a)
+		{
+			var about = AboutDialog.InitializeGui (this);
 			about.Run ();
 			about.Destroy ();
 		}
